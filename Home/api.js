@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.get('/',(req, res) => {
     res.send("Hii from LPU")
 })
-
+/*
 app.get('/category',(req, res) => {
     db.collection('productitem').find().toArray((err,result) =>{
         if(err) throw err;
@@ -93,7 +93,7 @@ app.get('/orders',(req, res) => {
     })
 })
 
-
+*/
 MongoClient.connect(mongoUrl, (err,client)=>{
     if(err) console.log("Error while connecting")
     db = client.db('VSL');
